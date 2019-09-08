@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head >
+        <title>Main Menu</title>
+        <h:outputStylesheet library = "css" name = "styles.css"  /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="#{resource['images/logo.ico']}"/>
+    </h:head>
+    <h:body>
+        <header>
+            <h1></h1>
+            <div>
+                <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                    <input name="sitesearch" type="hidden" />
+                    <input autocomplete="on" class="form-controls search" name="q" placeholder="  &#xF002; Search in Google.com" style="font-family:Arial, FontAwesome" required="required"  type="text"/>
+                </form>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/BOOKMOVIETICKET-war/faces/afterLogin/homePage.xhtml">Sign In</a>
+                        </li>
+                        <li>
+                            <a href="/BOOKMOVIETICKET-war/faces/signupPage.xhtml">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="pageNav">
+                <a href="faces/homePage.xhtml">Home Page</a>
+                <a  class="active" href="faces/aboutUs.xhtml">About Us</a>
+            </nav>
+        </header>
+        <article class="body">
+            <h2 align="center">
+                ABOUT US
+            </h2>
+            <section>
+                <p> This is the movie ticket booking website</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7122.365422018717!2d144.97487114588984!3d-37.86431459982429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad668439e426d69%3A0xf187361e91543246!2sALDI+St+Kilda!5e0!3m2!1svi!2sau!4v1559549157376!5m2!1svi!2sau" width="600" height="450" frameborder="0" style="border:0" allowFullScreen="true"></iframe>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <p> Contact information:</p>
+            <ul>
+                <li>Email:<a href="mailto:101985894@swin.edu.au" target="_blank">MovieTicketBooking@swin.edu.au</a></li>
+                <li>Hotline number: (+61) 420 527 685</li>
+            </ul>
+            <p>
+                <a href="https://www.instagram.com" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>&#160;&#160;&#160;&#160;     
+                <a href="https://www.facebook.com" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>&#160;&#160;&#160;&#160;      
+                <a href="https://www.twitter.com/?lang=en" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+            </p>
+        </footer>
+    </h:body>
+</html>
+

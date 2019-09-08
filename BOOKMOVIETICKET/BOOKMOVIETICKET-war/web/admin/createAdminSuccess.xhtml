@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head >
+        <title>Main Menu</title>
+        <h:outputStylesheet library = "css" name = "styles.css"  /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="#{resource['images/logo.ico']}"/>
+    </h:head>
+    <h:body>
+        <header>
+            <h1></h1>
+            <div>
+                <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                    <input name="sitesearch" type="hidden" />
+                    <input autocomplete="on" class="form-controls search" name="q" placeholder="  &#xF002; Search in Google.com" style="font-family:Arial, FontAwesome" required="required"  type="text"/>
+                </form>
+                <nav>
+                    <ul>
+                        <li>
+                            <h:form>
+                                <h:commandLink value="User ID: #{userManagedBean.id}" action="#{userManagedBean.displayDetails()}"/>           
+                            </h:form>
+                        </li>
+                        <li>
+                            <h:form>
+                                <h:commandLink value="Logout" action="#{myLoginManagedBean.logoutResult()}"/>           
+                            </h:form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav id="pageNav">
+                <a href="/BOOKMOVIETICKET-war/faces/afterLogin/homePage.xhtml">Home Page</a>
+                <a href="/BOOKMOVIETICKET-war/faces/afterLogin/aboutUs.xhtml">About Us</a>
+                <a class="active" href="/BOOKMOVIETICKET-war/faces/admin/manage.xhtml">Manage Web Site</a>
+            </nav>
+        </header>
+        <article>
+            <h2 align="center">
+                Create Administrator
+            </h2>
+            <section>
+                <h3>Add Admin Successful!!!</h3>
+                <p>Another Admin has been added into the system</p>
+            </section>
+        </article>
+        <footer>
+            <p> Contact information:</p>
+            <ul>
+                <li>Email:<a href="mailto:101985894@swin.edu.au" target="_blank">MovieTicketBooking@swin.edu.au</a></li>
+                <li>Hotline number: (+61) 420 527 685</li>
+            </ul>
+            <p>
+                <a href="https://www.instagram.com" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>&#160;&#160;&#160;&#160;     
+                <a href="https://www.facebook.com" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>&#160;&#160;&#160;&#160;      
+                <a href="https://www.twitter.com/?lang=en" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+            </p>
+        </footer>
+    </h:body>
+</html>
+
+
+
+
+
